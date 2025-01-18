@@ -9,7 +9,7 @@ const jwtSecreto = process.env.JWT_SECRETO as string;
 export const crearUser = async(req:Request,res:Response):Promise<void>=>{
     try {
         const {nombres,apellidos,documento,email,tipo,password} = req.body;
-        const userExistente = await User.findOne({email});
+        const userExistente = await User.findOne({email,documento});
         if(userExistente){
         res.status(400).json({msg:"El usuario ya existe"});
         return;
