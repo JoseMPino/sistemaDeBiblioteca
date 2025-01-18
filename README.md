@@ -114,7 +114,7 @@ Admin: correo: admin@gmail.com  -password: 123
 
 User: correo: user@gmail.com    -password: 123
 
-A veces puede ser lento al principio o, se puede demorar en cargar la primera vez  por que al ser un plan gratuito de render   me ofrece tengo poca memoria .
+A veces puede ser lento al principio o, se puede demorar en cargar la primera vez  por que al ser un plan gratuito de render   me ofrece  poca memoria .
 
 Descripción del Desarrollo:
 
