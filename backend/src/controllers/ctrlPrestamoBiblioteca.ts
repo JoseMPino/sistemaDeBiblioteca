@@ -26,8 +26,8 @@ export const obtenerPrestamosBiblioteca = async (req: Request, res: Response): P
         // Mapear los datos formateados
         const prestamosFormateados = prestamos.map(prestamo => ({
             _id: prestamo._id,
-            libroId: prestamo.libro._id,
-            usuarioId: prestamo.usuario._id,
+            libroId: prestamo.libro ? prestamo.libro._id : null, 
+            usuarioId: prestamo.usuario ? prestamo.usuario._id : null,
             nombreUsuario: `${prestamo.usuario.nombres} ${prestamo.usuario.apellidos}`,
             emailUsuario: prestamo.usuario.email,
             tituloLibro: prestamo.libro.titulo,
